@@ -9,35 +9,309 @@
 </head>
 <body>
 
-    <div>   
-        <div class="logo">
-            <img src="assets/images/logo.png" width="200"/>
-        </div>
+    <header id="header">   
+        <picture class="logo">
+            <source media="(min-width: 350px)" srcset="assets/images/logo.png" alt="Logo do site">
+            <img src="assets/images/logo.png" width="200" alt="Logo do site" />
+        </picture>
+
+        <form action="/processar-pesquisa" method="get">
+            <!-- Etiqueta e rótulo associado para acessibilidade -->
+            <label for="campo-pesquisa"></label>
+            <!-- Atributos de acessibilidade e SEO -->
+            <input type="search" id="campo-pesquisa" name="q" placeholder="Digite sua pesquisa..." aria-label="Campo de Pesquisa" required>
+          
+            <!-- Atributo de acessibilidade para descrever a ação do botão -->
+            <button type="submit" aria-label="Enviar Pesquisa">Pesquisar</button>
+          </form>
+    </header>
+
+    <div class="bar">
+        
+        <br>
+    
     </div>
 
-    <div class="bar"></div>
-
     <div class="content">
-        <div class="sidebar">
-            <h2>Título</h2>
-            <ul>
-                <li><a href="#">Links</a></li>
-            </ul>
-        </div>
+        <nav class="sidebar">
 
-        <div class="main">
+            <h2>Série de TV</h2>
+
+            <hr>
+
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <br>
+                <li><a href="#enredo">Enredo</a></li>
+                <br>
+                <li><a href="#elenco">Elenco principal</a></li>
+                <br>
+                <li><a href="#recepcao">Recepção</a></li>
+                <br>
+                <li><a href="#referencias">Referências</a></li>
+                <br>
+                <li><a href="#links">Ligações externas</a></li>
+            </ul>
+
+        </nav>
+
+        
+
+        <main class="main">
             
-        </div>
 
-        <div class="anchors">
-            <h2>Neste Artigo</h2>
-            <ul>
-                <li><a href="#">Âncoras</a></li>
+            <h1 id="inicio">Person of Interest</h1>
+
+            <hr>
+
+            <a href="index.html">Artigo</a>
+
+            <a href="https://pt.wikipedia.org/w/index.php?title=Discuss%C3%A3o:Person_of_Interest&action=edit&redlink=1">Discussão</a>
+
+            <hr>
+
+            <p>Person of Interest (no Brasil, Pessoa de Interesse em Portugal Sob Suspeita) é uma série de televisão norte-americana do gênero drama, criada por Jonathan Nolan e produzida por J. J. Abrams, transmitida originalmente nos Estados Unidos pela CBS, entre 22 de setembro de 2011, até 21 de junho de 2016. No Brasil é transmitida pelo canal por assinatura Warner Channel e pelo canal aberto SBT.</p>
+
+            <p>Em 11 de maio de 2015 a CBS renovou a série para uma quinta e última temporada, composta por 13 episódios.</p>
+
+            <br>
+
+            <article>
+
+                <h2 id="enredo">Enredo</h2>
+
+                <hr>
+
+                <p>Harold Finch (Michael Emerson), um bilionário misterioso, desenvolveu para o governo americano um programa de computador que prevê e avisa ao governo atos de terrorismo que terão lugar num futuro próximo. Mas além disso o programa também prevê crimes violentos envolvendo pessoas normais, pessoas e crimes que o governo considera irrelevantes.</p>
+
+                <p>Finch discorda da omissão do governo em relação a esses crimes, e então cria uma backdoor no programa que o informa número do Seguro Social (na tradução brasileira informa o CPF) da pessoa envolvida nestes crimes tidos como irrelevantes. No entanto, o programa tem as suas limitações: ele não informa se a pessoa será vítima ou criminoso, nem quando ou onde o crime vai acontecer.</p>
+
+                <p>Incapaz de parar os crimes por conta própria, Finch contrata John Reese (Jim Caviezel), um ex Army Rangers e ex-agente de campo da CIA que foi dado como morto, para ajudar a impedir os crimes em Nova Iorque.</p>
+                
+            </article>
+
+            <br>
+
+            <article>
+
+                <h2 id="elenco">Elenco principal</h2>
+
+                <hr>
+
+                <ul>
+                    <li>John Reese (Jim Caviezel) - Um ex-agente da CIA, supostamente morto.</li>
+                    <br>
+                    <li>Harold Finch (Michael Emerson) - Um misterioso bilionário, também supostamente morto.</li>
+                    <br>
+                    <li>Jocelyn "Joss" Carter (Taraji P. Henson) - Uma detetive da NYPD que cruzou o caminho de Reese e tenta prendê-lo.</li>
+                    <br>
+                    <li>Lionel Fusco (Kevin Chapman) - Um polícia corrupto, recrutado por Reese para ser seu informante.</li>
+                    <br>
+                    <li>Samantha Groves (Amy Acker) - Também conhecida como Root, é uma hacker que cruza o caminho da equipa e descobre o programa de Harold.</li>
+                    <br>
+                    <li>Sameen Shaw (Sarah Shahi) - Uma ex-agente da CIA,traída pelo governo. Cruza o caminho da equipe quando se torna um número irrelevante.</li>
+                </ul>
+
+            </article>
+
+            <br>
+
+            <article>
+
+                <h2 id="recepcao">Recepção</h2>
+
+                <p>Person of Interest teve uma recepção favorável por parte da crítica especializada. Na sua primeira temporada, com base em 26 avaliações profissionais, alcançou uma pontuação de 66 de 100 no Metacritic. No site Rotten Tomatoes, a primeira temporada recebeu avaliações positivas de 87% de um total de 312 usuários, e as temporadas seguintes tiveram recepção ainda mais positiva, tendo a terceira temporada sido avaliada positivamente por 96% de um total de 412 usuários.</p>
+
+
+            </article>
+
+            <br>
+
+            <article>
+
+                <h2 id="referencias">Referências</h2>
+
+                <hr>
+
+                <ol>
+                    <li><a href="http://www.sbt.com.br/series/pessoadeinteresse/" target="_blank"> Pessoa de Interesse. </a><a href="https://pt.wikipedia.org/wiki/SBT">SBT</a></li>
+                    <li><a href="http://tvdependente.net/2011/02/michael-emerson-junta-se-a-j-j-abrams-em-novo-piloto/" target="_blank">«Michael Emerson junta-se a J.J. Abrams em novo piloto»</a>TVD. 17 de Fevereiro de 2011. Consultado em 29 de Junho de 2011</li>
+                    <li>Seidman, Robert (29 de Junho de 2011). <a href="http://tvbythenumbers.zap2it.com/2011/06/29/cbs-announces-fall-2011-premiere-dates/96883/" target="_blank"> «CBS Announces Fall 2011 Premiere Dates»</a>(em inglês). TV by the Numbers. Consultado em 10 de Outubro de 2011</li>
+                    <li><a href="http://www.sbt.com.br/noticias/13280/O-sucesso-Person-of-Interest-estreia-no-SBT-nesta-quarta.html" target="_blank"> «O sucesso Pessoa de Interesse (Person of Interest) estreia no SBT»</a>SBT. 5 de novembro de 2013</li>
+                    <li>Goldberg, Lesley (11 de maio de 2015). <a href="http://www.hollywoodreporter.com/live-feed/cbs-renews-good-wife-person-794821" target="_blank">"CBS Renews Good Wife, Person of Interest, Odd Couple, 12 More as CSI Plots Endgame". The Hollywood Reporter.</a>Retrieved 11 de maio de 2015.</li>
+                    <li><a href="https://www.metacritic.com/tv/person-of-interest" target="_blank">«Person of Interest»</a>(em inglês). Metacritic. Consultado em 9 de setembro de 2014</li>
+                    <li><a href="https://www.rottentomatoes.com/tv/person_of_interest/s01" target="_blank"> «Person of Interest: Season 1 - Rotten Tomatoes»</a>(em inglês). Rotten Tomatoes. Consultado em 7 de outubro de 2017</li>
+                    <li><a href="https://www.rottentomatoes.com/tv/person_of_interest/s03" target="_blank">«Person of Interest: Season 3 - Rotten Tomatoes»</a>(em inglês). Rotten Tomatoes. Consultado em 7 de outubro de 2017</li>
+                </ol>
+
+            </article>
+
+            <br>
+
+            <article>
+
+                <h2 id="links">Ligações externas</h2>
+                <hr>
+
+                <ol>
+                        
+                    <li><a href="http://www.cbs.com/primetime/person_of_interest/video/" target="_blank">«Página oficial»</a> (em inglês). no sítio da CBS</li>
+                    <li><a href="http://www.sbt.com.br/series/pessoadeinteresse/" target="_blank">«Pessoa de Interesse»</a>. no site do SBT</li>
+                    <li><a href="https://www.imdb.com/title/tt1839578/" target="_blank">Person of Interest</a>. no <a href="https://pt.wikipedia.org/wiki/IMDb">IMDb</a>.</li>
+                    <li><a href="http://www.tv.com/shows/person-of-interest-2011/" target="_blank">«Person of Interest»</a> (em inglês). em <a href="https://pt.wikipedia.org/wiki/TV.com">TV.com</a></li>
+                    <li><a href="https://www.metacritic.com/tv/person-of-interest" target="_blank">«Person of Interest»</a> (em inglês) no <a href="https://pt.wikipedia.org/wiki/Metacritic">Metacritic</a></li>
+
+                </ol>
+
+            </article>
+
+        </main>
+
+        <aside class="anchors">
+            <h3 class="cor">Person of Interest</h3>
+            <p class="cor">Sob Suspeita (<a href="https://pt.wikipedia.org/wiki/Portugal">PT</a>)</p>
+            <p class="cor">Pessoa de Interesse (<a href="https://pt.wikipedia.org/wiki/Brasil">BR</a>)</p>
+            <picture>
+                <source media="(min-width:650px)" srcset="assets/images/Person_of_Interest.webp" alt="Capa do filme Person of Interest" >
+                <img src="assets/images/Person_of_Interest.jpg" alt="Capa do filme Person of Interest" width="230">
+            </picture>
+            
+            <table id="s-t01">
+                <thead>
+                    <th colspan="2" class="cor">Informação geral</th>
+                </thead>
+                <tbody id="s-t-t01">
+                    <tr>
+                        <td>Formato</td>
+                        <td><a href="https://pt.wikipedia.org/wiki/S%C3%A9rie_de_televis%C3%A3o">série</a></td>
+                    <tr>
+                        <td>Género</td>
+                        <td><a href="https://pt.wikipedia.org/wiki/Drama">Drama</a></td>
+                    </tr>
+                    <tr>
+                        <td>Duração</td>
+                        <td>44 minutos</td>
+                    </tr>
+                    <tr>
+                        <td>Criador(es)</td>
+                        <td><a href="https://pt.wikipedia.org/wiki/Jonathan_Nolan">Jonathan Nolan</a></td>
+                    </tr>
+                    <tr>
+                        <td>País de origem</td>
+                        <td><a href="https://pt.wikipedia.org/wiki/Estados_Unidos">Estados Unidos</a></td>
+                    </tr> 
+                    <tr>
+                        <td>dioma original</td>
+                        <td><a href="https://pt.wikipedia.org/wiki/L%C3%ADngua_inglesa">inglês</a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="cor">Produção</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="5">Produtor(es) executivo(s)</td>
+                        <td><a href="https://pt.wikipedia.org/wiki/J._J._Abrams">J. J. Abrams</a></td>
+                    </tr>
+                    <tr>  
+                        <td><a href="https://pt.wikipedia.org/wiki/Bryan_Burk">Bryan Burk</a></td>
+                    </tr> 
+                    
+                    <tr>
+                        <td><a href="https://pt.wikipedia.org/wiki/Jonathan_Nolan">Jonathan Nolan</a></td>
+                    </tr>
+                    <tr>
+                        <td>Greg Plageman</td>
+                    </tr>
+                    <tr>
+                        <td>David Semel</td>
+                    
+                    </tr>
+                    
+                    <tr>
+                        <td rowspan="6">Elenco</td>
+                        <td><a href="https://pt.wikipedia.org/wiki/Jim_Caviezel">Jim Caviezel</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://pt.wikipedia.org/wiki/Michael_Emerson">Michael Emerson</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://pt.wikipedia.org/wiki/Taraji_P._Henson">Taraji P. Henson</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://pt.wikipedia.org/w/index.php?title=Kevin_Chapman&action=edit&redlink=1">Kevin Chapman</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://pt.wikipedia.org/wiki/Amy_Acker">Amy Acker</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://pt.wikipedia.org/wiki/Sarah_Shahi">Sarah Shahi</a></td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="3">Empresa(s) produtora(s)</th>
+                        <td><a href="https://pt.wikipedia.org/wiki/Bad_Robot_Productions">Bad Robot Productions</a></td>
+                    </tr>
+                    <tr>
+                        <td>Kilter Films</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://pt.wikipedia.org/wiki/Warner_Bros._Television">Warner Bros. Television</a></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" class="cor">Exibição</td>
+                    </tr>
+
+                    <tr>
+                        <td>Emissora original</td>
+                        <td><a href="https://pt.wikipedia.org/wiki/Columbia_Broadcasting_System">CBS</a></td>
+                    </tr>
+                    <tr>
+                        <td>Formato de exibição</td>
+                        <td><a href="https://pt.wikipedia.org/wiki/1080i">1080i</a> (<a href="https://pt.wikipedia.org/wiki/HDTV">HDTV</a>)</td>
+                    </tr>
+                         
+                    <tr>
+                        <td>Transmissão original</td>
+                        <td><a href="https://pt.wikipedia.org/wiki/22_de_setembro">22 de setembro</a> de <a href="https://pt.wikipedia.org/wiki/2011">2011</a> - <a href="https://pt.wikipedia.org/wiki/21_de_junho">21 de junho</a> de <a href="https://pt.wikipedia.org/wiki/2016">2016</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>Temporadas</td>
+                        <td>5</td>
+                    </tr>
+                            
+                    <tr>
+                        <td>Episódios</td>
+                        <td>103 (<a href="https://pt.wikipedia.org/wiki/Lista_de_epis%C3%B3dios_de_Person_of_Interest">lista de episódios</a>)</td>
+                    </tr>        
+                
+                    
+
+                </tbody>
+                <tfoot>
+
+                </tfoot>
+            </table>
+
             </ul>
-        </div>
+        <aside>
     </div>
 
     <div class="footer">
+
+        <p>Esta página foi editada pela última vez às 23h23min de 27 de setembro de 2023.</p>
+        <p>Este texto é disponibilizado nos termos da licença <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt" target="_blank">Atribuição-CompartilhaIgual 4.0 Internacional (CC BY-SA 4.0) da Creative Commons;</a> pode estar sujeito a condições adicionais. Para mais detalhes, consulte as <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">condições de utilização</a>.</p>
+        
+        <a href="">Política de privacidade</a>
+        <a href="">Sobre a Wikipédia</a>
+        <a href="">Avisos gerais</a>
+        <a href="">Código de conduta</a>
+        <a href="">Programadores</a>
+        <a href="">Estatísticas</a>
+        <a href="">Declaração sobre ''cookies''</a>
+        <a href="">Versão móvel</a>
+
+        <br>
 
     </div>
 </body>

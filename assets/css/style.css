@@ -5,6 +5,16 @@ body, html {
 }
 ul { list-style: none; padding-left: 5px; }
 a { color:blue; text-decoration: none;}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px
+
+};
+
+
 .bar {
     background-color: #f9f9fb;
     padding:15px;
@@ -35,4 +45,34 @@ a { color:blue; text-decoration: none;}
 }
 figure {
     text-align: center;
+}
+
+.cor{
+    background-color: #008B8B;
+}
+
+#s-t01{
+    border: solid 1px;
+}
+
+#s-t-t01 tr th{
+    padding: 7px;
+}
+
+#s-t01 thead{
+    color: white;
+    text-align: center;
+}
+
+#s-t01 tbody{
+    text-align: left;
+}
+
+#s-t01 tbody tr:nth-child(even) td{
+    background-color: rgb(250, 241, 241);
+}
+
+#s-t01 tbody tr:hover td{
+    cursor: pointer;
+    background-color: rgb(155, 148, 148);
 }
